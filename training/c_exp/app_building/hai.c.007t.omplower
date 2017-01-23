@@ -1,0 +1,32 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1368, cgraph_uid=0)
+
+main ()
+{
+  int D.1376;
+  int a;
+  int arr[10];
+  char str[10];
+  char str1[9];
+  extern int printf (const char *, ...);
+
+  try
+    {
+      str = "-24 hours";
+      str1 = "24 hours";
+      printf ("%s", &str);
+      printf ("\n%s", &str1);
+      printf ("Hello,World");
+      printf ("%d", 10);
+      D.1376 = 0;
+      return D.1376;
+    }
+  finally
+    {
+      arr = {CLOBBER};
+      str = {CLOBBER};
+      str1 = {CLOBBER};
+    }
+}
+
+

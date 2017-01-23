@@ -1,0 +1,13 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  volatile int a = 5;
+
+    volatile int a = 5;
+  printf ((const char * restrict) "%d\t%d\t%d\n",  ++a, a, a++ );
+  return 0;
+}
+

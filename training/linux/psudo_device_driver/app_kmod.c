@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <fcntl.h>
+
+int main( void )
+{
+	int fd;
+	int n;
+	n = getpid();
+	int k;
+
+	fd = open("/dev/myChar", O_RDWR);
+
+	if (fd < 0)
+		perror("Unable to open the Device");
+	else
+		printf("File Opened Successfully %d\n", fd);
+	printf("pid %d\n",getpid());
+	ioctl(fd,n);
+	
+	close(fd);
+
+	return 0;
+}

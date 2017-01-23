@@ -1,0 +1,31 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=1368, cgraph_uid=0)
+
+Released 0 names, 0.00%, removed 0 holes
+main ()
+{
+  char str1[9];
+  char str[10];
+  int arr[10];
+  int a;
+  int D.1376;
+  int _1;
+
+  <bb 2>:
+  str = "-24 hours";
+  str1 = "24 hours";
+  printf ("%s", &str);
+  printf ("\n%s", &str1);
+  printf ("Hello,World");
+  printf ("%d", 10);
+  _1 = 0;
+  arr ={v} {CLOBBER};
+  str ={v} {CLOBBER};
+  str1 ={v} {CLOBBER};
+
+<L1>:
+  return _1;
+
+}
+
+

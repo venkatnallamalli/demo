@@ -1,0 +1,23 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a;
+  int arr[10];
+  char str[10] = "-24 hours";
+  char str1[9] = "24 hours";
+  extern int printf (const char *, ...);
+
+    int a;
+    int arr[10];
+    char str[10] = "-24 hours";
+    char str1[9] = "24 hours";
+  printf ((const char *) "%s", (char *) &str);
+  printf ((const char *) "\n%s", (char *) &str1);
+  printf ((const char *) "Hello,World");
+  printf ((const char *) "%d", 10);
+  return 0;
+}
+
